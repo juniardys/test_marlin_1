@@ -13,6 +13,7 @@ class Marlin_booking
 	}
 
 	public function result($angka) {
+		$angka = intval($angka);
 		if (($angka % 3 == 0) && ($angka % 5 == 0)) {
 			$this->totmarlinbooking++;
 			return "Marlin Booking";
